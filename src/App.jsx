@@ -4,6 +4,7 @@ import viteLogo from "/vite.svg";
 import "./App.css";
 import Greeting from "./Greeting";
 import Test from "./Test";
+import Person from "./Person";
 
 function List(props) {
   return (
@@ -24,11 +25,10 @@ function List(props) {
 }
 
 function App() {
-  const animals = [];
+  const animals = ["cat", "dog", "hippo"];
   return (
     <>
-      <h1>Animals:</h1>
-      <List animals={animals} />
+      <Person />
     </>
   );
 }
